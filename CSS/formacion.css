@@ -147,6 +147,10 @@
         color: #427D9D;
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     #li1 {
         font-size: 20px;
         margin-left: 25%;
