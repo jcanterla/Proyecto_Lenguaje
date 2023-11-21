@@ -104,7 +104,7 @@ ul, li {
     color: #00324b;
     }
 
-    img {
+    .perfil {
         height: 150px;
         width: 150px;
         border-radius: 50%;
@@ -125,11 +125,12 @@ ul, li {
         
     }
     blockquote {
-      width: 40%;
+      width: 43%;
       margin: 25px auto 0px;
       padding: 20px;
       quotes: "\201C""\201D""\2018""\2019";
       text-align: center;
+      font-size: 1.2em;
     }
 
     blockquote:before {
@@ -150,3 +151,32 @@ ul, li {
         vertical-align: -0.4em;
     }
 
+    .sobre {
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .scroll{
+        overflow-y: scroll;
+        height: 91.5%;
+    }
+
+    .cuadrado {
+        display: block;
+        margin: auto;
+        background-color: #f1f2f3;
+        width: 800px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    p{
+        font-size: 1.1em;
+    }
