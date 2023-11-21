@@ -270,6 +270,6 @@ h2{
 }
 
 .scroll{
-    overflow: scroll;
-    height: 750px;
+    overflow-y: scroll;
+    height: 92%;
 }
