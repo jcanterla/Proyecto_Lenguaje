@@ -224,3 +224,10 @@
     background: #f90;
     color: #00324b;
     }
+
+
+
+    .scroll{
+        overflow-y: scroll;
+        height: 91.5%;
+    }
