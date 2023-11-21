@@ -12,7 +12,7 @@
     background-color: #9BBEC8;
     color: #164863;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 70px;
     font-family: Montserrat_Black;
 }
@@ -24,6 +24,7 @@
     border-radius: 7px;
     background-color: #DDF2FD;
     font-family: Raleway;
+    margin-bottom: 50px;
 }
 
 
@@ -114,16 +115,6 @@
     overflow:hidden;
     background-color: #9BBEC8;;
     }
-
-    ul, li {
-    box-sizing: border-box;
-    }
-
-    ul.slider {
-    padding: 30px;
-    }
-
-
 
     nav {
     width: 100vw;
