@@ -27,6 +27,55 @@
     margin-bottom: 50px;
 }
 
+#cont_maps {
+    margin-left: 0px;
+}
+
+#map1  {
+    width: 600px;
+    margin-left: 3%;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: #DDF2FD;
+    font-family: Raleway;
+    margin-bottom: 50px;
+    padding: 2px;
+    height: 450px;
+
+}
+
+#map2 {
+    width: 600px;
+    position: absolute;
+    top: 682px;
+    left: 725px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: #DDF2FD;
+    font-family: Raleway;
+    margin-bottom: 50px;
+    padding: 2px;
+    height: 450px;
+}
+
+#isidoro {
+    margin-left: 50px;
+    margin-bottom: 0;
+    font-family: Montserrat_Black;
+    font-weight: 900;
+    font-size: 25px;
+    color: #164863;
+}
+
+#safa {
+    position: absolute;
+    top: 635px;
+    left: 735px;
+    font-family: Montserrat_Black;
+    font-weight: 900;
+    font-size: 25px;
+    color: #164863;
+}
 
     
     ul, li {
@@ -81,6 +130,14 @@
         margin-bottom: 0px;
     }
 
+    #ul11 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 19px;
+        margin-left: 5%;
+        color: #164863;
+        margin-bottom: 0px;
+    }
+
     #li {
         font-size: 20px;
         margin-left: 15%;
@@ -110,17 +167,17 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    overflow:hidden;
     background-color: #9BBEC8;;
     }
 
     nav {
     width: 100vw;
     position: absolute;
-    top: auto;
+    top: 1200px;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
+    height: 65px;
     background: #f1f2f3;
     }
 
