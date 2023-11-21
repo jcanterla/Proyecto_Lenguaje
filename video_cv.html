@@ -73,33 +73,40 @@
         #foto {
         width: 16px;
         }
+        .scroll{
+        overflow-y: scroll;
+        height: 91.5%;
+        }
     </style>
 </head>
 <body>
-    <h1>Vídeo CV</h1>
-    <div class="video-container">
-        <video id="miVideo">
-            <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.mp4" type="video/mp4"> 
-            <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.ogg" type="video/ogg">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-        <div class="custom-controls">
-          <div id="controles">
-            <button id="play-pause-button">&#9658;</button>
-            <button id="atras" onclick="skip(-10)">&lt;&lt;</button>
-            <button id="adelante" onclick="skip(+10)">&gt;&gt;</button>
-          </div>
-          <div id="reproductor">
-            <input type="range" id="barraDeReproduccion" min="0" value="0">
-            <span id="tiempoActual">0:00</span>
-          </div>
-          <div id="caja-volumen">
-            <img id="volume-icon" src="https://i.pinimg.com/originals/84/e8/f0/84e8f08130dadb130f0c4cdf6ed11029.png" alt="volumen">
-            <input type="range" id="barraVolumen" min="0" max="1" step="0.1" value="1">
-          </div>
-          <button id="fullscreen-button">  <img id="foto" src="https://i.pinimg.com/originals/e3/57/33/e357334ca6f4506878ec57af7f77b78a.png" alt="pantalla_completa"></button>
+    <div class="scroll">
+        <h1>Vídeo CV</h1>
+        <div class="video-container">
+            <video id="miVideo">
+                <source src="video/Video_curriculum_JCR.mp4" type="video/mp4"> 
+                <source src="video/Video_curriculum_JCR.mp4" type="video/ogg">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="custom-controls">
+            <div id="controles">
+                <button id="play-pause-button">&#9658;</button>
+                <button id="atras" onclick="skip(-10)">&lt;&lt;</button>
+                <button id="adelante" onclick="skip(+10)">&gt;&gt;</button>
+            </div>
+            <div id="reproductor">
+                <input type="range" id="barraDeReproduccion" min="0" value="0">
+                <span id="tiempoActual">0:00</span>
+            </div>
+            <div id="caja-volumen">
+                <img id="volume-icon" src="https://i.pinimg.com/originals/84/e8/f0/84e8f08130dadb130f0c4cdf6ed11029.png" alt="volumen">
+                <input type="range" id="barraVolumen" min="0" max="1" step="0.1" value="1">
+            </div>
+            <button id="fullscreen-button">  <img id="foto" src="https://i.pinimg.com/originals/e3/57/33/e357334ca6f4506878ec57af7f77b78a.png" alt="pantalla_completa"></button>
+            </div>
         </div>
     </div>
+    
 
     <nav>
         <ul class="menu">
