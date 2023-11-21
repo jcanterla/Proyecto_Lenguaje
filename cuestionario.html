@@ -1,426 +1,427 @@
 <!DOCTYPE html>
 <head>
-    <title>Slider con CSS</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="CSS/cuestionario.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Cuestionario</title>
 </head>
 <body>
-    <div id="ind_caja">
-        <h1 id="ind_cab">Selecciona una opción:</h1>
-    </div>
-    <div id="caja_enun">
-        <p id="enunciado">De las siguientes características personales indica con cuál de cada cuatro (solo una de ellas) te sientes más identificado/a:</p>
-    </div>
-    <div id="cuestionario">
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_1" value="A">
-            <label>
-                <p class="text_op">A) Directo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_1" value="B">
-            <label>
-                <p class="text_op">B) Hablador/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_1" value="C">
-            <label>
-                <p class="text_op">C) Suave</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_1" value="D">
-            <label>
-                <p class="text_op">D) Primero analizo cuidadosamente las situaciones</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_2" value="A">
-            <label>
-                <p class="text_op">A) Atrevido/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_2" value="B">
-            <label>
-                <p class="text_op">B) Me entusiasmo con facilidad</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_2" value="C">
-            <label>
-                <p class="text_op">C) Tiendo a no participar activamente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_2" value="D">
-            <label>
-                <p class="text_op">D) Me gusta que todo esté bien organizado</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_3" value="A">
-            <label>
-                <p class="text_op">A) Contundente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_3" value="B">
-            <label>
-                <p class="text_op">B) Persuasivo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_3" value="C">
-            <label>
-                <p class="text_op">C) Simpático/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_3" value="D">
-            <label>
-                <p class="text_op">D) Exacto/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_4" value="A">
-            <label>
-                <p class="text_op">A) Innovador/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_4" value="B">
-            <label>
-                <p class="text_op">B) Creativo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_4" value="C">
-            <label>
-                <p class="text_op">C) Parte de un equipo</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_4" value="D">
-            <label>
-                <p class="text_op">D) Preciso</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_5" value="A">
-            <label>
-                <p class="text_op">A) Competitivo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_5" value="B">
-            <label>
-                <p class="text_op">B) Optimista</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_5" value="C">
-            <label>
-                <p class="text_op">C) Sereno/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_5" value="D">
-            <label>
-                <p class="text_op">D) Tradicional, las cosas como siempre</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_6" value="A">
-            <label>
-                <p class="text_op">A) Decidido/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_6" value="B">
-            <label>
-                <p class="text_op">B) Encantador/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_6" value="C">
-            <label>
-                <p class="text_op">C) Primero pienso y luego actúo</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_6" value="D">
-            <label>
-                <p class="text_op">D) Maduro/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_7" value="A">
-            <label>
-                <p class="text_op">A) Solucionador/a de problemas</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_7" value="B">
-            <label>
-                <p class="text_op">B) Popular</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_7" value="C">
-            <label>
-                <p class="text_op">C) Sincero/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_7" value="D">
-            <label>
-                <p class="text_op">D) Objetivo/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_8" value="A">
-            <label>
-                <p class="text_op">A) Agresiva/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_8" value="B">
-            <label>
-                <p class="text_op">B) Segura/o de mi misma/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_8" value="C">
-            <label>
-                <p class="text_op">C) Tengo mucha paciencia</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_8" value="D">
-            <label>
-                <p class="text_op">D) Perfeccionista en lo que hago</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_9" value="A">
-            <label>
-                <p class="text_op">A) Persistente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_9" value="B">
-            <label>
-                <p class="text_op">B) Abierta/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_9" value="C">
-            <label>
-                <p class="text_op">C) Posesiva/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_9" value="D">
-            <label>
-                <p class="text_op">D) Necesito tiempo</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_10" value="A">
-            <label>
-                <p class="text_op">A) Exigente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_10" value="B">
-            <label>
-                <p class="text_op">B) Sociable</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_10" value="C">
-            <label>
-                <p class="text_op">C) Amable</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_10" value="D">
-            <label>
-                <p class="text_op">D) Reflexivo/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_11" value="A">
-            <label>
-                <p class="text_op">A) Impaciente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_11" value="B">
-            <label>
-                <p class="text_op">B) Impulsiva/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_11" value="C">
-            <label>
-                <p class="text_op">C) Tranquila/o</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_11" value="D">
-            <label>
-                <p class="text_op">D) Metódico/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_12" value="A">
-            <label>
-                <p class="text_op">A) Dominante</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_12" value="B">
-            <label>
-                <p class="text_op">B) Confiado/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_12" value="C">
-            <label>
-                <p class="text_op">C) Compresivo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_12" value="D">
-            <label>
-                <p class="text_op">D) Buscador de datos</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_13" value="A">
-            <label>
-                <p class="text_op">A) Asumo riesgos</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_13" value="B">
-            <label>
-                <p class="text_op">B) Me relaciono bien</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_13" value="C">
-            <label>
-                <p class="text_op">C) Relajado/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_13" value="D">
-            <label>
-                <p class="text_op">D) Siempre me pongo el listón alto</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_14" value="A">
-            <label>
-                <p class="text_op">A) Con iniciativa</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_14" value="B">
-            <label>
-                <p class="text_op">B) Generoso/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_14" value="C">
-            <label>
-                <p class="text_op">C) Estable</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_14" value="D">
-            <label>
-                <p class="text_op">D) Educada/o</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_15" value="A">
-            <label>
-                <p class="text_op">A) Aventurero/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_15" value="B">
-            <label>
-                <p class="text_op">B) Convenzo fácilmente a los demás</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_15" value="C">
-            <label>
-                <p class="text_op">C) Sé escuchar</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_15" value="D">
-            <label>
-                <p class="text_op">D) Rígido</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_16" value="A">
-            <label>
-                <p class="text_op">A) Autoritario/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_16" value="B">
-            <label>
-                <p class="text_op">B) Me emociono fácilmente</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_16" value="C">
-            <label>
-                <p class="text_op">C) Me gusta complacer a los demás</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_16" value="D">
-            <label>
-                <p class="text_op">D) Comedido/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_17" value="A">
-            <label>
-                <p class="text_op">A) Inquisitivo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_17" value="B">
-            <label>
-                <p class="text_op">B) Emprendedor/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_17" value="C">
-            <label>
-                <p class="text_op">C) Me cuesta mostrarme tal y como soy</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_17" value="D">
-            <label>
-                <p class="text_op">D) Lógico/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_18" value="A">
-            <label>
-                <p class="text_op">A) Rápido/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_18" value="B">
-            <label>
-                <p class="text_op">B) Agradable</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_18" value="C">
-            <label>
-                <p class="text_op">C) Pasivo/a</p>
-            </label>            
-            <br>
-            <input type="radio" class="text_sus" name="rellena_18" value="D">
-            <label>
-                <p class="text_op">D) Cuidadoso/a</p>
-            </label>
-        </fieldset>
-        <fieldset class="sus_caja">
-            <input type="radio" class="text_sus" name="rellena_19" value="A">
-            <label>
-                <p class="text_op">A) Me encantan los retos</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_19" value="B">
-            <label>
-                <p class="text_op">B) Efusivo/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_19" value="C">
-            <label>
-                <p class="text_op">C) Bueno/a</p>
-            </label>
-            <br>
-            <input type="radio" class="text_sus" name="rellena_19" value="D">
-            <label>
-                <p class="text_op">D) Reservado/a</p>
-            </label>
-        </fieldset>
-    </div>
-    <div class="sus_caja">
-        <h2>TOTALES</h2>
-        <div id="counter">
-            <div id="counter_A">A: 0</div>
-            <div id="counter_B">B: 0</div>
-            <div id="counter_C">C: 0</div>
-            <div id="counter_D">D: 0</div>
+    <div class="scroll">
+        <div id="ind_caja">
+            <h1 id="ind_cab">Selecciona una opción:</h1>
+        </div>
+        <div id="caja_enun">
+            <p id="enunciado">De las siguientes características personales indica con cuál de cada cuatro (solo una de ellas) te sientes más identificado/a:</p>
+        </div>
+        <div id="cuestionario">
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_1" value="A">
+                <label>
+                    <p class="text_op">A) Directo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_1" value="B">
+                <label>
+                    <p class="text_op">B) Hablador/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_1" value="C">
+                <label>
+                    <p class="text_op">C) Suave</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_1" value="D">
+                <label>
+                    <p class="text_op">D) Primero analizo cuidadosamente las situaciones</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_2" value="A">
+                <label>
+                    <p class="text_op">A) Atrevido/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_2" value="B">
+                <label>
+                    <p class="text_op">B) Me entusiasmo con facilidad</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_2" value="C">
+                <label>
+                    <p class="text_op">C) Tiendo a no participar activamente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_2" value="D">
+                <label>
+                    <p class="text_op">D) Me gusta que todo esté bien organizado</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_3" value="A">
+                <label>
+                    <p class="text_op">A) Contundente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_3" value="B">
+                <label>
+                    <p class="text_op">B) Persuasivo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_3" value="C">
+                <label>
+                    <p class="text_op">C) Simpático/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_3" value="D">
+                <label>
+                    <p class="text_op">D) Exacto/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_4" value="A">
+                <label>
+                    <p class="text_op">A) Innovador/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_4" value="B">
+                <label>
+                    <p class="text_op">B) Creativo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_4" value="C">
+                <label>
+                    <p class="text_op">C) Parte de un equipo</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_4" value="D">
+                <label>
+                    <p class="text_op">D) Preciso</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_5" value="A">
+                <label>
+                    <p class="text_op">A) Competitivo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_5" value="B">
+                <label>
+                    <p class="text_op">B) Optimista</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_5" value="C">
+                <label>
+                    <p class="text_op">C) Sereno/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_5" value="D">
+                <label>
+                    <p class="text_op">D) Tradicional, las cosas como siempre</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_6" value="A">
+                <label>
+                    <p class="text_op">A) Decidido/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_6" value="B">
+                <label>
+                    <p class="text_op">B) Encantador/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_6" value="C">
+                <label>
+                    <p class="text_op">C) Primero pienso y luego actúo</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_6" value="D">
+                <label>
+                    <p class="text_op">D) Maduro/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_7" value="A">
+                <label>
+                    <p class="text_op">A) Solucionador/a de problemas</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_7" value="B">
+                <label>
+                    <p class="text_op">B) Popular</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_7" value="C">
+                <label>
+                    <p class="text_op">C) Sincero/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_7" value="D">
+                <label>
+                    <p class="text_op">D) Objetivo/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_8" value="A">
+                <label>
+                    <p class="text_op">A) Agresiva/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_8" value="B">
+                <label>
+                    <p class="text_op">B) Segura/o de mi misma/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_8" value="C">
+                <label>
+                    <p class="text_op">C) Tengo mucha paciencia</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_8" value="D">
+                <label>
+                    <p class="text_op">D) Perfeccionista en lo que hago</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_9" value="A">
+                <label>
+                    <p class="text_op">A) Persistente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_9" value="B">
+                <label>
+                    <p class="text_op">B) Abierta/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_9" value="C">
+                <label>
+                    <p class="text_op">C) Posesiva/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_9" value="D">
+                <label>
+                    <p class="text_op">D) Necesito tiempo</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_10" value="A">
+                <label>
+                    <p class="text_op">A) Exigente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_10" value="B">
+                <label>
+                    <p class="text_op">B) Sociable</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_10" value="C">
+                <label>
+                    <p class="text_op">C) Amable</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_10" value="D">
+                <label>
+                    <p class="text_op">D) Reflexivo/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_11" value="A">
+                <label>
+                    <p class="text_op">A) Impaciente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_11" value="B">
+                <label>
+                    <p class="text_op">B) Impulsiva/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_11" value="C">
+                <label>
+                    <p class="text_op">C) Tranquila/o</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_11" value="D">
+                <label>
+                    <p class="text_op">D) Metódico/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_12" value="A">
+                <label>
+                    <p class="text_op">A) Dominante</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_12" value="B">
+                <label>
+                    <p class="text_op">B) Confiado/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_12" value="C">
+                <label>
+                    <p class="text_op">C) Compresivo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_12" value="D">
+                <label>
+                    <p class="text_op">D) Buscador de datos</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_13" value="A">
+                <label>
+                    <p class="text_op">A) Asumo riesgos</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_13" value="B">
+                <label>
+                    <p class="text_op">B) Me relaciono bien</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_13" value="C">
+                <label>
+                    <p class="text_op">C) Relajado/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_13" value="D">
+                <label>
+                    <p class="text_op">D) Siempre me pongo el listón alto</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_14" value="A">
+                <label>
+                    <p class="text_op">A) Con iniciativa</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_14" value="B">
+                <label>
+                    <p class="text_op">B) Generoso/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_14" value="C">
+                <label>
+                    <p class="text_op">C) Estable</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_14" value="D">
+                <label>
+                    <p class="text_op">D) Educada/o</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_15" value="A">
+                <label>
+                    <p class="text_op">A) Aventurero/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_15" value="B">
+                <label>
+                    <p class="text_op">B) Convenzo fácilmente a los demás</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_15" value="C">
+                <label>
+                    <p class="text_op">C) Sé escuchar</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_15" value="D">
+                <label>
+                    <p class="text_op">D) Rígido</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_16" value="A">
+                <label>
+                    <p class="text_op">A) Autoritario/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_16" value="B">
+                <label>
+                    <p class="text_op">B) Me emociono fácilmente</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_16" value="C">
+                <label>
+                    <p class="text_op">C) Me gusta complacer a los demás</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_16" value="D">
+                <label>
+                    <p class="text_op">D) Comedido/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_17" value="A">
+                <label>
+                    <p class="text_op">A) Inquisitivo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_17" value="B">
+                <label>
+                    <p class="text_op">B) Emprendedor/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_17" value="C">
+                <label>
+                    <p class="text_op">C) Me cuesta mostrarme tal y como soy</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_17" value="D">
+                <label>
+                    <p class="text_op">D) Lógico/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_18" value="A">
+                <label>
+                    <p class="text_op">A) Rápido/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_18" value="B">
+                <label>
+                    <p class="text_op">B) Agradable</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_18" value="C">
+                <label>
+                    <p class="text_op">C) Pasivo/a</p>
+                </label>            
+                <br>
+                <input type="radio" class="text_sus" name="rellena_18" value="D">
+                <label>
+                    <p class="text_op">D) Cuidadoso/a</p>
+                </label>
+            </fieldset>
+            <fieldset class="sus_caja">
+                <input type="radio" class="text_sus" name="rellena_19" value="A">
+                <label>
+                    <p class="text_op">A) Me encantan los retos</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_19" value="B">
+                <label>
+                    <p class="text_op">B) Efusivo/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_19" value="C">
+                <label>
+                    <p class="text_op">C) Bueno/a</p>
+                </label>
+                <br>
+                <input type="radio" class="text_sus" name="rellena_19" value="D">
+                <label>
+                    <p class="text_op">D) Reservado/a</p>
+                </label>
+            </fieldset>
+        </div>
+        <div class="sus_caja">
+            <h2>TOTALES</h2>
+            <div id="counter">
+                <div id="counter_A">A: 0</div>
+                <div id="counter_B">B: 0</div>
+                <div id="counter_C">C: 0</div>
+                <div id="counter_D">D: 0</div>
+            </div>
         </div>
     </div>
     <nav>
