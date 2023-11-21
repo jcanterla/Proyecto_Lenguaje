@@ -1,14 +1,170 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <title>Slider con CSS</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="CSS/video_cv.css">
+
+    <script>
+        const video = document.getElementById('miVideo');
+        const playPauseButton = document.getElementById('play-pause-button');
+        const barraDeReproduccion = document.getElementById('barraDeReproduccion');
+        const tiempoActual = document.getElementById('tiempoActual');
+        const barraVolumen = document.getElementById('barraVolumen');
+        const fullscreenButton = document.getElementById('fullscreen-button');
+
+        playPauseButton.addEventListener('click', togglePlayPause);
+        video.addEventListener('click', togglePlayPause);
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                playPauseButton.textContent = '❚❚';
+            } else {
+                video.pause();
+                playPauseButton.textContent = '►';
+            }
+        }
+
+        video.addEventListener('timeupdate', updateTiempoActual);
+        barraDeReproduccion.addEventListener('input', handleBarraDeReproduccion);
+        fullscreenButton.addEventListener('click', toggleFullscreen);
+
+        function updateTiempoActual() {
+            const currentTime = video.currentTime;
+            const duration = video.duration;
+            const minutes = Math.floor(currentTime / 60);
+            const seconds = Math.floor(currentTime % 60);
+            tiempoActual.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            barraDeReproduccion.value = (currentTime / duration) * 100;
+        }
+
+        function handleBarraDeReproduccion() {
+            const porcentaje = barraDeReproduccion.value;
+            const duration = video.duration;
+            const currentTime = (porcentaje / 100) * duration;
+            video.currentTime = currentTime;
+        }
+
+        function toggleFullscreen() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) {
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                event.preventDefault();
+                togglePlayPause();
+            }
+        })
+
+        barraVolumen.addEventListener('input', function() {
+            miVideo.volume = parseFloat(barraVolumen.value);
+        });
+
+        function skip(value) {
+            miVideo.currentTime += value;
+        }
+    </script>
+    <style>
+        body{
+        background-image: url('https://i.pinimg.com/originals/7f/23/54/7f2354571f93ae1092907b410e319369.gif');
+        background-size: 150%;
+        }
+        h1{
+        font-family: sans-serif;
+        color: black;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+        background-image: url('https://i.pinimg.com/originals/f4/ec/36/f4ec3662e8d1385a4989af5d642c68a1.gif');
+        max-height: 100px;
+        }
+        .video-container {
+        width: 640px;
+        margin: 0 auto;
+        }
+        video {
+        width: 100%;
+        }
+        .custom-controls {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px;
+        color: #fff;
+        }
+        #controles{
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+        }
+        #reproductor{
+        display: inline-block;
+        }
+        #barraDeReproduccion{
+        width: 305px;
+        vertical-align: middle;
+        }
+        #fullscreen-button{
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+        }
+        #barraVolumen{
+        width: 70px;
+        vertical-align: middle;
+        }
+        #volume-icon{
+        width: 20px;
+        vertical-align: middle;
+        }
+        #caja-volumen{
+        display: inline-block;
+        margin-left: 15px;
+        }
+        button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        }
+        #foto {
+        width: 16px;
+        }
+    </style>
 </head>
 <body>
-    <div id="caja_vid">
-        <video id="video">  
-            <source src="VideoCV/VideoCV.mp4">   
-        </video> 
+    <h1>Reproductor de vídeo</h1>
+    <div class="video-container">
+        <video id="miVideo">
+            <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.mp4" type="video/mp4"> 
+            <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.ogg" type="video/ogg">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="custom-controls">
+          <div id="controles">
+            <button id="play-pause-button">&#9658;</button>
+            <button id="atras" onclick="skip(-10)">&lt;&lt;</button>
+            <button id="adelante" onclick="skip(+10)">&gt;&gt;</button>
+          </div>
+          <div id="reproductor">
+            <input type="range" id="barraDeReproduccion" min="0" value="0">
+            <span id="tiempoActual">0:00</span>
+          </div>
+          <div id="caja-volumen">
+            <img id="volume-icon" src="https://i.pinimg.com/originals/84/e8/f0/84e8f08130dadb130f0c4cdf6ed11029.png" alt="volumen">
+            <input type="range" id="barraVolumen" min="0" max="1" step="0.1" value="1">
+          </div>
+          <button id="fullscreen-button">  <img id="foto" src="https://i.pinimg.com/originals/e3/57/33/e357334ca6f4506878ec57af7f77b78a.png" alt="pantalla_completa"></button>
+        </div>
     </div>
 
     <nav>
@@ -21,4 +177,5 @@
         </ul>
     </nav>
 </body>
+
 </html>
