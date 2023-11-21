@@ -125,7 +125,7 @@ ul, li {
         
     }
     blockquote {
-      width: 43%;
+      width: 50%;
       margin: 25px auto 0px;
       padding: 20px;
       quotes: "\201C""\201D""\2018""\2019";
