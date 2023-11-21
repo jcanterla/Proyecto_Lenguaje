@@ -197,30 +197,6 @@ font-size: calc( 1.5rem + 1vw );
 text-align: center;
 }
 
-#slide1 {
-background-color: #00324b;
-color: #fff;
-}
-
-#slide2 {
-background-color: #65bce8;
-color: #00324b;
-}
-
-#slide3 {
-background-color: #f90;
-color: #00324b;
-}
-
-#slide4 {
-background-color: #00324b;
-color: #65bce8;
-}
-
-#slide5 {
-background-color: #65bce8;
-color: #00324b;
-}
 
 nav {
 width: 100vw;
