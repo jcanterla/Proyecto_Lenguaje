@@ -62,6 +62,7 @@ blockquote:after {
     width: 150px;
     margin: auto;
     object-fit: cover;
+    margin-bottom: 30px;
 }
 
 .scroll{
