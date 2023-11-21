@@ -9,12 +9,12 @@
 }
 
 #titulo {
-    background-color: #00324b;
-    color: white;
+    background-color: #FFD28F;
+    color: #FFE3BB;
     text-align: center;
     margin-top: 80px;
     font-size: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Montserrat_Black;
 }
 
 #caja {
@@ -22,8 +22,11 @@
     margin-left: 25%;
     border: 2px solid black;
     border-radius: 7px;
-    background-color: #435585;
+    background-color: #818FB4;
+    font-family: Raleway;
 }
+
+
     
     ul, li {
     padding: 0;
@@ -109,7 +112,7 @@
     width: 100vw;
     height: 100vh;
     overflow:hidden;
-    background-color: #00324b;;
+    background-color: #FFD28F;;
     }
 
     ul, li {
