@@ -8,6 +8,8 @@
     src: url('../fonts/Montserrat-Regular.ttf');
 }
 
+
+
 #titulo {
     background-color: #9BBEC8;
     color: #164863;
@@ -154,9 +156,7 @@
         margin-bottom: 50px;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
+    
 
     /* 
        Si te fijas, hasta aqu� el CSS es igual que la primera versi�n.
@@ -170,13 +170,14 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #9BBEC8;;
+    background-color: #9BBEC8;
+    overflow: hidden;
     }
 
     nav {
     width: 100vw;
     position: absolute;
-    top: 1200px;
+    top: auto;
     right: 0;
     bottom: 0px;
     left: 0;
@@ -228,4 +229,7 @@
     color: #00324b;
     }
 
-    
+    .scroll{
+        overflow-y: scroll;
+        height: 91.5%;
+    }
