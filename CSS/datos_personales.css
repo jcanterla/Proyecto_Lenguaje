@@ -46,6 +46,8 @@ ul, li {
     width: 100vw;
     height: 100vh;
     overflow:hidden;
+    background-image: url("../img/images.jpg");
+    background-size: 100%;
     }
 
     nav {
@@ -114,7 +116,7 @@ ul, li {
 
     h1{
         font-size: 40pt;
-        color: #08a5b4;
+        color: #25416e;
         text-align: center;
     }
     h2{
@@ -123,10 +125,13 @@ ul, li {
         
     }
     blockquote {
-      background: white;
       width: 40%;
       margin: 25px auto 0px;
       padding: 20px;
       quotes: "\201C""\201D""\2018""\2019";
       text-align: center;
+    }
+
+    .scroll{
+        overflow-y: scroll;
     }
