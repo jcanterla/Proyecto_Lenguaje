@@ -1,3 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: Montserrat_Black;
+    src: url('../fonts/Montserrat-Black.ttf');
+}
+@font-face {
+    font-family: Montserrat_regular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+.perfil {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 44.5%;
+}    
+
+h1{
+    font-size: 40pt;
+    color: #363062;
+    text-align: center;
+    font-family: Montserrat_Black;
+}
+h2{
+    font-size: 25pt;
+    text-align: center;
+    font-family: Montserrat_regular;
+}
+blockquote {
+  width: 50%;
+  margin: 25px auto 0px;
+  padding: 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Raleway;
+}
+
+blockquote:before {
+    color: rgb(49, 49, 49);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.4em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    color: rgb(49, 49, 49);
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.4em;
+    margin-left: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.sobre {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.scroll{
+    overflow-y: scroll;
+    height: 91.5%;
+}
+
+.cuadrado {
+    display: block;
+    margin: auto;
+    background-color: #f1f2f3;
+    width: 800px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p{
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+
+
+
 ul, li {
     padding: 0;
     margin: 0;
@@ -104,79 +196,4 @@ ul, li {
     color: #00324b;
     }
 
-    .perfil {
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 1px solid black;
-        text-align: center;
-        margin-left: 44.5%;
-    }    
 
-    h1{
-        font-size: 40pt;
-        color: #25416e;
-        text-align: center;
-    }
-    h2{
-        font-size: 25pt;
-        text-align: center;
-        
-    }
-    blockquote {
-      width: 50%;
-      margin: 25px auto 0px;
-      padding: 20px;
-      quotes: "\201C""\201D""\2018""\2019";
-      text-align: center;
-      font-size: 1.2em;
-    }
-
-    blockquote:before {
-        color: rgb(49, 49, 49);
-        content: open-quote;
-        font-size: 4em;
-        line-height: 0.4em;
-        margin-right: 0.25em;
-        vertical-align: -0.4em;
-    }
-
-    blockquote:after {
-        color: rgb(49, 49, 49);
-        content: close-quote;
-        font-size: 4em;
-        line-height: 0.4em;
-        margin-left: 0.25em;
-        vertical-align: -0.4em;
-    }
-
-    .sobre {
-        height: 150px;
-        width: 150px;
-        margin: auto;
-        object-fit: cover;
-    }
-
-    .scroll{
-        overflow-y: scroll;
-        height: 91.5%;
-    }
-
-    .cuadrado {
-        display: block;
-        margin: auto;
-        background-color: #f1f2f3;
-        width: 800px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    p{
-        font-size: 1.1em;
-    }
