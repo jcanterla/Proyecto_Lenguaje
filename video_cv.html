@@ -7,166 +7,72 @@
     <link rel="stylesheet" href="CSS/video_cv.css">
     <link rel="icon" type="image/x-icon" href="img/video.png">
     <style>
-        ul, li {
-        padding: 0;
-        margin: 0;
-        list-style: none inside;
+        body{
+        background-image: url('https://i.pinimg.com/originals/7f/23/54/7f2354571f93ae1092907b410e319369.gif');
+        background-size: 150%;
         }
-
-        ul.slider {
-        position: relative;
-        }
-
-        ul.slider li {
-        opacity: 0;
-        transition: opacity .5s;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        margin: 50px;
-        padding: 50px;
-        border: 2px solid red;
-        background: #fff;
-        }
-
-        ul.slider li:first-child {
-            opacity: 1;
-        }
-
-        ul.slider li:target {
-            opacity: 1;
-        }
-
-        nav {
-        position: relative;
-        top: 200px;
-        left: 50px;
-        }
-
-        body, html {
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow:hidden;
-        }
-
-        ul, li {
-        box-sizing: border-box;
-        }
-
-        ul.slider {
-        padding: 30px;
-        }
-
-        ul.slider li {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        background-color: gray;
-        opacity: 0;
-        transition: opacity .5s;
-        padding-top: 30vh;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        font-size: calc( 1.5rem + 1vw );
+        h1{
+        font-family: sans-serif;
+        color: black;
+        padding-top: 25px;
+        padding-bottom: 25px;
         text-align: center;
+        background-image: url('https://i.pinimg.com/originals/f4/ec/36/f4ec3662e8d1385a4989af5d642c68a1.gif');
+        max-height: 100px;
         }
-
-        #slide1 {
-        background-color: #00324b;
+        .video-container {
+        width: 640px;
+        margin: 0 auto;
+        }
+        video {
+        width: 100%;
+        }
+        .custom-controls {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px;
         color: #fff;
         }
-
-        #slide2 {
-        background-color: #65bce8;
-        color: #00324b;
+        #controles{
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
         }
-
-        #slide3 {
-        background-color: #f90;
-        color: #00324b;
+        #reproductor{
+        display: inline-block;
         }
-
-        #slide4 {
-        background-color: #00324b;
-        color: #65bce8;
+        #barraDeReproduccion{
+        width: 305px;
+        vertical-align: middle;
         }
-
-        #slide5 {
-        background-color: #65bce8;
-        color: #00324b;
+        #fullscreen-button{
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
         }
-
-        nav {
-        width: 100vw;
-        position: absolute;
-        top: auto;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: #f1f2f3;
+        #barraVolumen{
+        width: 70px;
+        vertical-align: middle;
         }
-
-        nav ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        #volume-icon{
+        width: 20px;
+        vertical-align: middle;
         }
-
-        nav ul li {
-        display: flex;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        box-sizing: border-box;
+        #caja-volumen{
+        display: inline-block;
+        margin-left: 15px;
         }
-
-        nav a {
-        font-size: calc( 1.2rem + 1vw );
-        text-decoration: none;
-        font-weight: bold;
-        color: #00324b;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.8;
-        flex-grow: 1;
-        text-align: center;
-        border-top: 5px solid #00324b;
-        border-right: 1px solid #00324b;
-        flex-wrap: wrap;
-        position: relative;
+        button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
         }
-
-        nav li:last-child a {
-        border-right: 0;
+        #foto {
+        width: 16px;
         }
-
-        nav a:hover {
-        background-color: #00324b;
-        color: #fff;
-        border-top-color: #65bce8;
-        }
-
-        nav a:active {
-        border-top-color: #f90;
-        background: #f90;
-        color: #00324b;
-        }
-        #video {
-            width: 500px;
-            height: 300px;
-            background-color: #00324b;
-            align-items: center;
-        }
-        body {
-            background-color: #00324b;
-        }
-        #caja_vid {
-            text-align: center;
-            margin-top: 100px;
-        }
-        
     </style>
 </head>
 <body>
