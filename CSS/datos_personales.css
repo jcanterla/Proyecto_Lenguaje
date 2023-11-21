@@ -132,3 +132,21 @@ ul, li {
       text-align: center;
     }
 
+    blockquote:before {
+        color: rgb(49, 49, 49);
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.4em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote:after {
+        color: rgb(49, 49, 49);
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.4em;
+        margin-left: 0.25em;
+        vertical-align: -0.4em;
+    }
+
