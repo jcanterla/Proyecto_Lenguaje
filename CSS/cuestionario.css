@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: Montserrat_Black;
+    src: url('fonts/Montserrat-Black.ttf');
+}
+@font-face {
+    font-family: Montserrat_regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
 ul, li {
 padding: 0;
 margin: 0;
@@ -153,15 +163,7 @@ color: #00324b;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@font-face {
-    font-family: Montserrat_Black;
-    src: url('fonts/Montserrat-Black.ttf');
-}
-@font-face {
-    font-family: Montserrat_regular;
-    src: url('fonts/Montserrat-Regular.ttf');
-}
+
 body{
     background-image: url('https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg');
     background-size: 295%;
