@@ -34,12 +34,6 @@ ul, li {
     left: 50px;
     }
 
-    /* 
-       Si te fijas, hasta aqu� el CSS es igual que la primera versi�n.
-       A partir de aqu�, el c�digo CSS se complica para conseguir los 
-       efectos que puedes observar.
-    */
-
     body, html {
     padding: 0;
     margin: 0;
@@ -103,3 +97,17 @@ ul, li {
     background: #f90;
     color: #00324b;
     }
+    #prac {
+        margin-left: 50px;
+    }
+   .p {
+    padding: 30px;
+    font-size: 20px;
+   }
+   #prot {
+    margin-left: 50px;
+   }
+   .o {
+    padding: 30px;
+    font-size: 20px;
+   }
