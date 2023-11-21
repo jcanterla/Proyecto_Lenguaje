@@ -28,12 +28,11 @@
 }
 
 #cont_maps {
-    margin-left: 0px;
+    display: block;
 }
 
 #map1  {
     width: 600px;
-    margin-left: 5%;
     border: 2px solid black;
     border-radius: 7px;
     background-color: #DDF2FD;
@@ -41,14 +40,12 @@
     margin-bottom: 50px;
     padding: 2px;
     height: 450px;
+
 
 }
 
 #map2 {
     width: 600px;
-    position: absolute;
-    top: 685px;
-    left: 735px;
     border: 2px solid black;
     border-radius: 7px;
     background-color: #DDF2FD;
@@ -56,11 +53,11 @@
     margin-bottom: 50px;
     padding: 2px;
     height: 450px;
+
 }
 
 #isidoro {
-    margin-left: 80px;
-    margin-bottom: 0;
+    margin-left: 10px;
     font-family: Montserrat_Black;
     font-weight: 900;
     font-size: 25px;
@@ -68,15 +65,17 @@
 }
 
 #safa {
-    position: absolute;
-    top: 638px;
-    left: 745px;
+    margin-left: 10px;
     font-family: Montserrat_Black;
     font-weight: 900;
     font-size: 25px;
     color: #164863;
 }
 
+.caja_mapa{
+    display: inline-block;
+    margin-left: 72px;
+}
     
     ul, li {
     padding: 0;
