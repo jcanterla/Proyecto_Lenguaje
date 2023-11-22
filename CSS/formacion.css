@@ -58,7 +58,19 @@
 
 }
 
-#isidoro {
+#map3 {
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: #DDF2FD;
+    font-family: Raleway;
+    margin-bottom: 50px;
+    padding: 2px;
+    height: 450px;
+
+}
+
+#mercedes {
     margin-left: 10px;
     font-family: Montserrat_Black;
     font-weight: 900;
@@ -74,9 +86,23 @@
     color: #164863;
 }
 
+#blas {
+    margin-left: 10px;
+    font-family: Montserrat_Black;
+    font-weight: 900;
+    font-size: 25px;
+    color: #164863;
+}
+
 .caja_mapa{
     display: inline-block;
     margin-left: 72px;
+}
+
+#caja_mapa3{
+    display: inline-block;
+    margin-left: 410px;
+    text-align: center;
 }
     
     ul, li {
